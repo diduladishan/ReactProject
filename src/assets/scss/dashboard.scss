@@ -1,0 +1,198 @@
+@import "~bootstrap/scss/bootstrap-grid.scss";
+
+.contents {
+    .greet {
+        p {
+            color: rgb(160, 160, 161);
+            margin-bottom: 0;
+        }
+    }
+
+    .search {
+        position: relative;
+
+        img {
+            position: absolute;
+            left: 15px;
+            width: 20px;
+            top: 12px;
+        }
+
+        input {
+            background: #ffffff;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px 10px 45px;
+            width: 100%;
+        }
+    }
+
+    .first-coll {
+        background: rgb(241, 214, 193);
+    }
+
+    .second-coll {
+        background: #ffffff;
+    }
+
+    .collection {
+        border-radius: 20px;
+        padding: 10px;
+        border: 1px solid #ebebeb;
+
+        .logo {
+            padding: 10px 5px;
+            background: rgb(250, 224, 203);
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .logo-second {
+            background: #eeeeee;
+        }
+
+        .icon {
+            padding: 10px;
+            border-radius: 50%;
+            background: rgba($color: #000000, $alpha: 0.1) !important;
+            @include media-breakpoint-down(lg) {
+                padding: 5px 8px;
+                img {
+                    width: 20px;
+                }
+            }
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 40px;
+            }
+        }
+
+        h6 {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        p {
+            color: rgb(169, 152, 140);
+            font-size: 14px;
+        }
+
+        .price-section {
+            h3 {
+                font-weight: bold;
+
+                span {
+                    font-size: 16px;
+                    color: rgb(169, 152, 140);
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+
+    .spec-first {
+        flex: 1;
+        text-align: center;
+
+        .first,
+        .second {
+            padding: 15px 0;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        p {
+            margin-bottom: 0;
+            font-weight: bold;
+            color: #000000;
+            white-space: nowrap;
+            @include media-breakpoint-down(lg) {
+                font-size: 12px;
+            }
+        }
+
+        .first {
+            background: rgb(247, 221, 200);
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .second {
+            background: rgb(236, 235, 181);
+        }
+    }
+
+    .spec-second {
+        flex: 1;
+        text-align: center;
+
+        .first,
+        .second {
+            padding: 15px 0;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        p {
+            margin-bottom: 0;
+            font-weight: bold;
+            color: #000000;
+            white-space: nowrap;
+            @include media-breakpoint-down(lg) {
+                font-size: 12px;
+            }
+        }
+
+        .first {
+            background: rgb(248, 251, 230);
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .second {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background: #ecf2fe;
+        }
+
+    }
+
+    .last-item {
+        background: #e8f3ef;
+        padding: 10px;
+        border-radius: 20px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+
+        .icon {
+            display: inline-block;
+        }
+
+        p {
+            margin-bottom: 0;
+            margin-left: 10px;
+
+            b {
+                color: #000000;
+            }
+            @include media-breakpoint-down(lg) {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .last-final {
+        background: #baebc0;
+    }
+}

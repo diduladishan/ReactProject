@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(247, 247, 249) !important;
+}
+
+.contents {
+    hr {
+        border-top: 2px solid rgb(241, 241, 243);
+        opacity: 1;
+        margin: 0 0 2rem;
+    }
+
+    table {
+        thead {
+
+            th,
+            td {
+                color: #939297;
+                font-size: 14px;
+            }
+
+            th {
+                padding: 15px 20px;
+                border-color: #f9f9f9;
+                border-bottom-width: 3px;
+            }
+        }
+
+        tbody {
+            td {
+                color: #b9b9b9;
+            }
+
+            tr {
+
+                th,
+                td {
+                    padding: 0.5rem 20px;
+                    border-color: #f4f4f4;
+                    border-bottom-width: 1px;
+                }
+
+                &:last-child {
+
+                    th,
+                    td {
+                        border-bottom-width: 0
+                    }
+                }
+            }
+
+            button {
+                background: transparent;
+                color: #000000;
+                border-radius: 20px;
+                border-color: #f3f3f3;
+                white-space: nowrap;
+
+                &:hover {
+                    border-color: #f3f3f3;
+                    background: #47d3f6;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@import "~bootstrap/scss/bootstrap-grid.scss";
+
+.header {
+    padding: 10px;
+
+    img {
+        max-height: 50px;
+    }
+
+    .notification {
+        text-decoration: none;
+        color: #000000;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background: #ffffff;
+        border-radius: 25px;
+        padding: 5px 8px;
+    }
+
+    .overflow {
+        display: none;
+        margin-left: 20px;
+        @include media-breakpoint-down(md) {
+            display: block;
+        }
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
